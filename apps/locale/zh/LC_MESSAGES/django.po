@@ -2622,7 +2622,7 @@ msgstr "你的账号已创建成功"
 
 #: jumpserver/context_processor.py:17
 msgid "PAM system"
-msgstr "PAM 特权账号管理"
+msgstr "PAM 特权账号管理系统"
 
 #: jumpserver/views/celery_flower.py:23
 msgid "<h1>Flower service unavailable, check it</h1>"

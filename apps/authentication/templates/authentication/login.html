@@ -132,9 +132,7 @@
 
 <div class="login-content">
     <div class="right-image-box">
-        <a href="{% if not XPACK_ENABLED %}https://github.com/jumpserver/jumpserver{% endif %}">
-            <img src="{{ LOGIN_IMAGE_URL }}" style="height: 100%; width: 100%"/>
-        </a>
+        <img src="{{ LOGIN_IMAGE_URL }}" style="height: 100%; width: 100%"/>
     </div>
     <div class="left-form-box {% if not form.challenge and not form.captcha %} no-captcha-challenge {% endif %}">
         <div style="background-color: white">
