@@ -42,7 +42,7 @@
 
         .login-content {
             height: 490px;
-            width: 533px;
+            width: 1066px;
             margin-right: auto;
             margin-left: auto;
             margin-top: calc((100vh - 470px) / 3);
@@ -67,7 +67,7 @@
             text-align: center;
             background-color: white;
             height: 100%;
-            width: 100%;
+            width: 50%;
         }
 
         .red-fonts {
@@ -131,11 +131,11 @@
 <body>
 
 <div class="login-content">
-{#    <div class="right-image-box">#}
-{#        <a href="{% if not XPACK_ENABLED %}https://github.com/jumpserver/jumpserver{% endif %}">#}
-{#            <img src="{{ LOGIN_IMAGE_URL }}" style="height: 100%; width: 100%"/>#}
-{#        </a>#}
-{#    </div>#}
+    <div class="right-image-box">
+        <a href="{% if not XPACK_ENABLED %}https://github.com/jumpserver/jumpserver{% endif %}">
+            <img src="{{ LOGIN_IMAGE_URL }}" style="height: 100%; width: 100%"/>
+        </a>
+    </div>
     <div class="left-form-box {% if not form.challenge and not form.captcha %} no-captcha-challenge {% endif %}">
         <div style="background-color: white">
 {#            <ul class="nav navbar-top-links navbar-right">#}
