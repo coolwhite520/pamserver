@@ -6,11 +6,11 @@ from kombu import Exchange, Queue
 from celery import Celery
 
 # set the default Django settings module for the 'celery' program.
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'jumpserver.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pamserver.settings')
 from pamserver import settings
 # from django.conf import settings
 
-app = Celery('jumpserver')
+app = Celery('pamserver')
 
 configs = {k: v for k, v in settings.__dict__.items() if k.startswith('CELERY')}
 # Using a string here means the worker will not have to

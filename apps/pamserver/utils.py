@@ -21,10 +21,11 @@ def get_current_request():
 
 
 def has_valid_xpack_license():
-    if not settings.XPACK_ENABLED:
-        return False
-    from xpack.plugins.license.models import License
-    return License.has_valid_license()
+    # if not settings.XPACK_ENABLED:
+    #     return False
+    # from xpack.plugins.license.models import License
+    # return License.has_valid_license()
+    return True
 
 
 def get_xpack_license_info() -> dict:
