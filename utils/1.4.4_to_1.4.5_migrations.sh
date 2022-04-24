@@ -4,7 +4,7 @@
 host=127.0.0.1
 port=3306
 username=root
-db=jumpserver
+db=pamserver
 
 echo "备份原来的 migrations"
 mysqldump -u${username} -h${host} -P${port} -p ${db} django_migrations > django_migrations.sql.bak

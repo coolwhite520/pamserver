@@ -14,7 +14,7 @@ class DaphneService(BaseService):
         print("\n- Start Daphne ASGI WS Server")
 
         cmd = [
-            'daphne', 'jumpserver.asgi:application',
+            'daphne', 'pamserver.asgi:application',
             '-b', HTTP_HOST,
             '-p', str(WS_PORT),
         ]
