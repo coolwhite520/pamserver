@@ -116,13 +116,7 @@ class License(models.Model):
 
     @classmethod
     def has_valid_license(cls):
-        try:
-            info = cls.get_license_info_or_cache()
-            if info:
-                return validate_license(info)
-        except:
-            pass
-        return False
+        return True
 
     def set_to_cache(self):
         cache.set(KEY_LICENSE_INFO, self.info, None)

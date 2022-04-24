@@ -101,7 +101,6 @@ def test_asset_connectivity_manual(asset):
 def test_assets_connectivity_manual(assets):
     task_name = gettext_noop("Test assets connectivity: ") + str([asset.hostname for asset in assets])
     summary = test_asset_connectivity_util(assets, task_name=task_name)
-
     if summary.get('dark'):
         return False, summary['dark']
     else:
