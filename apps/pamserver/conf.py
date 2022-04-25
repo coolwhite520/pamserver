@@ -131,7 +131,7 @@ class Config(dict):
         'LOG_LEVEL': 'DEBUG',
         'LOG_DIR': os.path.join(PROJECT_DIR, 'logs'),
         'DB_ENGINE': 'mysql',
-        'DB_NAME': 'jumpserver',
+        'DB_NAME': 'pamserver',
         'DB_HOST': '127.0.0.1',
         'DB_PORT': 3306,
         'DB_USER': 'root',
@@ -166,9 +166,9 @@ class Config(dict):
         # Auth LDAP settings
         'AUTH_LDAP': False,
         'AUTH_LDAP_SERVER_URI': 'ldap://localhost:389',
-        'AUTH_LDAP_BIND_DN': 'cn=admin,dc=jumpserver,dc=org',
+        'AUTH_LDAP_BIND_DN': 'cn=admin,dc=pamserver,dc=org',
         'AUTH_LDAP_BIND_PASSWORD': '',
-        'AUTH_LDAP_SEARCH_OU': 'ou=tech,dc=jumpserver,dc=org',
+        'AUTH_LDAP_SEARCH_OU': 'ou=tech,dc=pamserver,dc=org',
         'AUTH_LDAP_SEARCH_FILTER': '(cn=%(user)s)',
         'AUTH_LDAP_START_TLS': False,
         'AUTH_LDAP_USER_ATTR_MAP': {"username": "cn", "name": "sn", "email": "mail"},
@@ -242,8 +242,8 @@ class Config(dict):
             "organization": {
                 "en": {
                     "name": "JumpServer",
-                    "displayname": "JumpServer",
-                    "url": "https://jumpserver.org/"
+                    "displayname": "PamServer",
+                    "url": ""
                 }
             },
             "strict": True,
@@ -300,7 +300,7 @@ class Config(dict):
         'EMAIL_CUSTOM_USER_CREATED_BODY': _('Your account has been created successfully'),
 
         'OTP_VALID_WINDOW': 2,
-        'OTP_ISSUER_NAME': 'JumpServer',
+        'OTP_ISSUER_NAME': 'PamServer',
         'EMAIL_SUFFIX': 'example.com',
 
         # Terminal配置
@@ -398,8 +398,8 @@ class Config(dict):
         'PERIOD_TASK_ENABLED': True,
 
         # 导航栏 帮助
-        'HELP_DOCUMENT_URL': 'http://docs.jumpserver.org',
-        'HELP_SUPPORT_URL': 'http://www.jumpserver.org/support/',
+        'HELP_DOCUMENT_URL': '',
+        'HELP_SUPPORT_URL': '',
 
         'FORGOT_PASSWORD_URL': '',
         'HEALTH_CHECK_TOKEN': '',

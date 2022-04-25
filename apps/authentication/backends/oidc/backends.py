@@ -41,7 +41,7 @@ class UserMixin:
         sub = claims['sub']
         name = claims.get('name', sub)
         username = claims.get('preferred_username', sub)
-        email = claims.get('email', "{}@{}".format(username, 'jumpserver.openid'))
+        email = claims.get('email', "{}@{}".format(username, 'pamserver.openid'))
         logger.debug(
             log_prompt.format(
                 "sub: {}|name: {}|username: {}|email: {}".format(sub, name, username, email)

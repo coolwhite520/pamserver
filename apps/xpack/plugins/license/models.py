@@ -8,7 +8,7 @@ from hashlib import md5
 from django.db import models
 from django.core.cache import cache
 from django.utils.translation import ugettext_lazy as _
-
+from pamserver import const
 from .utils import validate_license, decrypt_license, date_to_timestamp
 
 KEY_LICENSE_INFO = 'KEY_LICENSE_INFO'
@@ -95,10 +95,10 @@ class License(models.Model):
         # }
         result = {
             "subscription_id": "123456",
-            "corporation": "fffffff",
+            "corporation": "北京繁浮科技有限公司",
             'date_expired': "2029-10-10",
             'asset_count': 0,
-            'edition': '',
+            'edition': const.VERSION,
             'is_valid': True
         }
         return result

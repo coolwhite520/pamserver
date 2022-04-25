@@ -13,7 +13,7 @@ from pamserver.utils import get_current_request
 from .local import thread_local
 
 pattern = re.compile(r'FROM `(\w+)`')
-logger = logging.getLogger("jumpserver.common")
+logger = logging.getLogger("pamserver.common")
 DEBUG_DB = os.environ.get('DEBUG_DB', '0') == '1'
 
 

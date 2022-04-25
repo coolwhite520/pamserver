@@ -216,7 +216,7 @@ class ClientProtocolMixin:
         serializer.is_valid(raise_exception=True)
         name, data = self.get_rdp_file_content(serializer)
         response = HttpResponse(data, content_type='application/octet-stream')
-        filename = "{}-{}-jumpserver.rdp".format(self.request.user.username, name)
+        filename = "{}-{}-pamserver.rdp".format(self.request.user.username, name)
         filename = urllib.parse.quote(filename)
         response['Content-Disposition'] = 'attachment; filename*=UTF-8\'\'%s' % filename
         return response
@@ -242,7 +242,7 @@ class ClientProtocolMixin:
         else:
             raise ValueError('Protocol not support: {}'.format(protocol))
 
-        filename = "{}-{}-jumpserver".format(username, name)
+        filename = "{}-{}-pamserver".format(username, name)
         data = {
             "filename": filename,
             "protocol": system_user.protocol,

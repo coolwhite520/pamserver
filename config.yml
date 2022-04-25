@@ -112,7 +112,7 @@ REDIS_PORT: 6379
 # OTP settings
 # OTP/MFA 配置
 # OTP_VALID_WINDOW: 0
-# OTP_ISSUER_NAME: Jumpserver
+# OTP_ISSUER_NAME: PamServer
 
 # Perm show single asset to ungrouped node
 # 是否把未授权节点资产放入到 未分组 节点中

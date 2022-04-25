@@ -33,11 +33,13 @@ def get_xpack_license_info() -> dict:
         from xpack.plugins.license.models import License
         info = License.get_license_detail()
         corporation = info.get('corporation', '')
+        version = info.get('edition')
     else:
         current_year = datetime.now().year
-        corporation = f'Copyright - FIT2CLOUD 飞致云 © 2014-{current_year}'
+        corporation = f''
     info = {
-        'corporation': corporation
+        'corporation': corporation,
+        'version': version,
     }
     return info
 
