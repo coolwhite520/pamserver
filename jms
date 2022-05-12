@@ -142,7 +142,7 @@ def start_services():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description="""
-        Jumpserver service control tools;
+        Pamserver service control tools;
 
         Example: \r\n
 
