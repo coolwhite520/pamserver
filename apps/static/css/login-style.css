@@ -272,19 +272,20 @@ fieldset[disabled] .btn-login.active {
 
 .btn-transparent {
     color: #fff;
-    border: 1px solid #1ab394;
+    border: 1px solid #4a608e;
     display: inline-block;
     font-size: 13px;
     letter-spacing: 1px;
     padding: 10px 30px;
     text-transform: uppercase;
     border-radius: 5px;
-    background: #259980;
+    background: #4a608e;
     width: 100%;
 }
 
 .btn-transparent:hover {
     color: #fff;
+    background-color: #6280bd;
 }
 
 .border {
