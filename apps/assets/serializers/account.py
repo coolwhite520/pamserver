@@ -23,7 +23,7 @@ class AccountSerializer(AuthSerializerMixin, BulkOrgResourceModelSerializer):
 
     class Meta:
         model = AuthBook
-        fields_mini = ['id', 'username', 'ip', 'hostname', 'platform', 'protocols', 'version', 'can_moveout']
+        fields_mini = ['id', 'username', 'ip', 'hostname', 'platform', 'protocols', 'version']
         fields_write_only = ['password', 'private_key', "public_key", 'passphrase']
         fields_other = ['date_created', 'date_updated', 'connectivity', 'date_verified', 'comment']
         fields_small = fields_mini + fields_write_only + fields_other
