@@ -95,7 +95,7 @@ class License(models.Model):
         # }
         result = {
             "subscription_id": "123456",
-            "corporation": "北京繁浮科技有限公司",
+            "corporation": " 东旭数字未来(北京)信息科技有限公司",
             'date_expired': "2029-10-10",
             'asset_count': 0,
             'edition': const.VERSION,
